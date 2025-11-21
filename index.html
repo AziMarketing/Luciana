@@ -3,76 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azi Comunicação - Soluções em Marketing</title>
+    <title>Azi Comunicação - Marketing Acessível</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-        body { font-family: 'Open Sans', sans-serif; background-color: #f8fafc; }
+        body { font-family: 'Open Sans', sans-serif; background-color: #f0fdf4; } /* Fundo levemente esverdeado */
         h1, h2, h3, .font-title { font-family: 'Montserrat', sans-serif; }
         
-        /* Cores da Azi (Ajuste conforme a identidade visual real) */
+        /* Cores da Azi (Adaptadas para um tom moderno e profissional) */
         :root {
-            --azi-primary: #e11d48; /* Ex: Um rosa/vermelho vibrante ou a cor da logo */
-            --azi-secondary: #1e293b; /* Azul escuro/Cinza */
-            --azi-accent: #f43f5e;
+            --azi-primary: #0f172a; /* Azul Escuro / Preto */
+            --azi-accent: #16a34a; /* Verde (Foco em vendas/resultado) */
+            --azi-light: #f0fdf4;
         }
 
-        .text-azi-primary { color: var(--azi-primary); }
-        .bg-azi-primary { background-color: var(--azi-primary); }
-        .border-azi-primary { border-color: var(--azi-primary); }
-        
-        .text-azi-secondary { color: var(--azi-secondary); }
-        .bg-azi-secondary { background-color: var(--azi-secondary); }
+        .text-azi-accent { color: var(--azi-accent); }
+        .bg-azi-accent { background-color: var(--azi-accent); }
+        .border-azi-accent { border-color: var(--azi-accent); }
 
         .service-card {
             transition: all 0.3s ease;
         }
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: var(--azi-accent);
         }
 
         /* Checkbox personalizado */
         .checkbox-wrapper input:checked + div {
-            background-color: var(--azi-primary);
-            border-color: var(--azi-primary);
-            color: white;
+            background-color: #dcfce7; /* Verde claro */
+            border-color: var(--azi-accent);
+            color: #14532d;
+        }
+        .checkbox-wrapper input:checked + div .check-icon {
+            opacity: 1;
         }
     </style>
 </head>
-<body class="text-gray-700">
+<body class="text-slate-800">
 
     <!-- NAVEGAÇÃO -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo Atualizada -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <!-- Substituí o fallback pela imagem real -->
-                <img src="572100202_17842997484606710_1257713055308118500_n.jpg" alt="Azi Comunicação Logo" class="h-12 w-auto object-contain">
+                <!-- LOGO AQUI -->
+                <img src="logo_azi.jpg" alt="Azi Comunicação" class="h-12 w-auto object-contain rounded-md">
             </div>
-            <a href="#orcamento" class="bg-azi-primary hover:bg-rose-700 text-white font-bold py-2 px-6 rounded-full transition shadow-lg transform hover:scale-105">
+            <a href="#orcamento" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition shadow-lg transform hover:scale-105 text-sm">
                 Solicitar Orçamento
             </a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="bg-azi-secondary text-white py-20 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <header class="bg-slate-900 text-white py-24 relative overflow-hidden">
+        <!-- Efeito de fundo -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-green-500 rounded-full filter blur-[100px] opacity-20 -mr-20 -mt-20"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-blue-500 rounded-full filter blur-[100px] opacity-20 -ml-20 -mb-20"></div>
+
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Transformamos Ideias em <br><span class="text-rose-400">Resultados Digitais</span>
+            <span class="bg-white/10 text-green-300 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block border border-white/20">Marketing para Todos</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Divulgue seu negócio <br>sem <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">gastar uma fortuna</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light">
-                Estratégias de marketing personalizadas para alavancar o seu negócio. Da gestão de redes sociais ao tráfego pago de alta performance.
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
+                Pacotes de marketing digital acessíveis, pensados para pequenos e médios negócios que precisam crescer agora.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#servicos" class="border-2 border-white hover:bg-white hover:text-azi-secondary text-white font-bold py-3 px-8 rounded-full transition">
-                    Conhecer Serviços
+                <a href="#servicos" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition shadow-green-500/30 shadow-lg">
+                    Ver Pacotes
+                </a>
+                <a href="#orcamento" class="border border-gray-600 hover:bg-gray-800 text-gray-300 font-semibold py-3 px-8 rounded-lg transition">
+                    Simular Investimento
                 </a>
             </div>
         </div>
@@ -81,138 +88,195 @@
     <main class="container mx-auto px-6 py-16 max-w-6xl">
 
         <!-- SEÇÃO DE SERVIÇOS -->
-        <section id="servicos" class="mb-20">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-azi-secondary mb-4">Nossos Serviços</h2>
-                <div class="w-20 h-1 bg-azi-primary mx-auto rounded-full"></div>
-                <p class="text-gray-500 mt-4">Soluções completas para a sua presença digital.</p>
+        <section id="servicos" class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Soluções que Cabem no Bolso</h2>
+                <div class="w-16 h-1 bg-green-500 mx-auto rounded-full"></div>
+                <p class="text-gray-500 mt-4">Escolha apenas o que você precisa para começar.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center group cursor-pointer" onclick="toggleServico('social')">
-                    <div class="w-16 h-16 bg-rose-100 text-azi-primary rounded-full flex items-center justify-center mx-auto mb-6 text-2xl group-hover:bg-azi-primary group-hover:text-white transition">
-                        <i class="fa-solid fa-share-nodes"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Serviço 1 -->
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-100 shadow-md hover:shadow-xl">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-brands fa-instagram"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Gestão de Redes Sociais</h3>
-                    <p class="text-gray-500 text-sm mb-4">Criação de conteúdo, design, agendamento e interação com seu público no Instagram, Facebook e LinkedIn.</p>
-                    <div class="text-azi-primary font-semibold text-sm">A partir de R$ 800,00</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Social Media <span class="text-green-600 text-sm font-normal">(Start)</span></h3>
+                    <p class="text-gray-500 text-sm mb-4">Ideal para manter sua rede ativa. 2 posts por semana + Stories. Design profissional.</p>
+                    <div class="border-t pt-4 flex justify-between items-center">
+                        <span class="text-xs text-gray-400">Mensal</span>
+                        <span class="text-xl font-bold text-slate-800">R$ 450</span>
+                    </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center group cursor-pointer" onclick="toggleServico('trafego')">
-                    <div class="w-16 h-16 bg-rose-100 text-azi-primary rounded-full flex items-center justify-center mx-auto mb-6 text-2xl group-hover:bg-azi-primary group-hover:text-white transition">
+                <!-- Serviço 2 -->
+                <div class="service-card bg-white p-6 rounded-xl border-2 border-green-500 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase">Popular</div>
+                    <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mb-4 text-xl">
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Tráfego Pago (Ads)</h3>
-                    <p class="text-gray-500 text-sm mb-4">Gestão de campanhas no Google Ads e Meta Ads para atrair clientes qualificados e vender mais.</p>
-                    <div class="text-azi-primary font-semibold text-sm">A partir de R$ 1.000,00</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Social Growth</h3>
+                    <p class="text-gray-500 text-sm mb-4">Para quem quer crescer. 4 posts/semana + Reels + Interação com seguidores.</p>
+                    <div class="border-t pt-4 flex justify-between items-center">
+                        <span class="text-xs text-gray-400">Mensal</span>
+                        <span class="text-xl font-bold text-green-600">R$ 850</span>
+                    </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="service-card bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center group cursor-pointer" onclick="toggleServico('branding')">
-                    <div class="w-16 h-16 bg-rose-100 text-azi-primary rounded-full flex items-center justify-center mx-auto mb-6 text-2xl group-hover:bg-azi-primary group-hover:text-white transition">
-                        <i class="fa-solid fa-pen-nib"></i>
+                <!-- Serviço 3 -->
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-100 shadow-md hover:shadow-xl">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-bullseye"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Branding & Identidade</h3>
-                    <p class="text-gray-500 text-sm mb-4">Criação de logotipos, manuais de marca e identidade visual completa para posicionar sua empresa.</p>
-                    <div class="text-azi-primary font-semibold text-sm">Sob Consulta</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Gestão de Tráfego</h3>
+                    <p class="text-gray-500 text-sm mb-4">Anúncios no Instagram e Google para trazer clientes reais. (Verba de anúncio à parte).</p>
+                    <div class="border-t pt-4 flex justify-between items-center">
+                        <span class="text-xs text-gray-400">Taxa de Gestão</span>
+                        <span class="text-xl font-bold text-slate-800">R$ 600</span>
+                    </div>
                 </div>
+
+                <!-- Serviço 4 -->
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-100 shadow-md hover:shadow-xl">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Pack de Artes Avulsas</h3>
+                    <p class="text-gray-500 text-sm mb-4">Precisa só das artes? Pacote com 5 artes profissionais para você postar quando quiser.</p>
+                    <div class="border-t pt-4 flex justify-between items-center">
+                        <span class="text-xs text-gray-400">Pacote Único</span>
+                        <span class="text-xl font-bold text-slate-800">R$ 250</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-100 shadow-md hover:shadow-xl">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Google Meu Negócio</h3>
+                    <p class="text-gray-500 text-sm mb-4">Configuração completa para sua empresa aparecer no mapa e nas buscas do Google.</p>
+                    <div class="border-t pt-4 flex justify-between items-center">
+                        <span class="text-xs text-gray-400">Taxa Única</span>
+                        <span class="text-xl font-bold text-slate-800">R$ 350</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="service-card bg-white p-6 rounded-xl border border-gray-100 shadow-md hover:shadow-xl">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Logo Express</h3>
+                    <p class="text-gray-500 text-sm mb-4">Criação de Logotipo profissional + Marca d'água para suas fotos.</p>
+                    <div class="border-t pt-4 flex justify-between items-center">
+                        <span class="text-xs text-gray-400">Taxa Única</span>
+                        <span class="text-xl font-bold text-slate-800">R$ 500</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- SIMULADOR DE ORÇAMENTO (A "Calculadora" adaptada) -->
-        <section id="orcamento" class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+        <!-- SIMULADOR -->
+        <section id="orcamento" class="bg-slate-900 rounded-3xl shadow-2xl overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 
                 <!-- Lado Esquerdo: Seleção -->
-                <div class="p-8 md:p-12">
-                    <h3 class="text-2xl font-bold text-azi-secondary mb-2">Monte seu Pacote</h3>
-                    <p class="text-gray-500 mb-8 text-sm">Selecione os serviços que você precisa para ver uma estimativa de investimento mensal.</p>
+                <div class="p-8 md:p-10 bg-white">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Monte seu Combo</h3>
+                    <p class="text-gray-500 mb-6 text-sm">Selecione o que precisa e veja o valor na hora.</p>
 
-                    <div class="space-y-4">
-                        <!-- Item 1 -->
+                    <div class="space-y-3 max-h-[400px] overflow-y-auto pr-2">
+                        <!-- Checkboxes -->
                         <label class="checkbox-wrapper cursor-pointer block">
-                            <input type="checkbox" class="hidden" value="800" data-name="Social Media Starter" onchange="calcularTotal()">
-                            <div class="border-2 border-gray-200 rounded-xl p-4 flex justify-between items-center hover:border-rose-300 transition">
+                            <input type="checkbox" class="hidden" value="450" data-name="Social Media (Start)" onchange="calcularTotal()">
+                            <div class="border border-gray-200 rounded-lg p-3 flex justify-between items-center hover:border-green-400 transition">
                                 <div class="flex items-center gap-3">
-                                    <i class="fa-brands fa-instagram text-xl"></i>
-                                    <div>
-                                        <div class="font-bold text-sm">Social Media (Básico)</div>
-                                        <div class="text-xs opacity-70">3 posts/semana + Stories</div>
-                                    </div>
+                                    <i class="fa-brands fa-instagram text-lg text-gray-400 check-icon transition"></i>
+                                    <span class="font-semibold text-sm">Social Media (Start)</span>
                                 </div>
-                                <div class="font-bold">R$ 800</div>
+                                <div class="font-bold text-sm text-slate-600">R$ 450</div>
                             </div>
                         </label>
 
-                        <!-- Item 2 -->
                         <label class="checkbox-wrapper cursor-pointer block">
-                            <input type="checkbox" class="hidden" value="1500" data-name="Social Media Pro" onchange="calcularTotal()">
-                            <div class="border-2 border-gray-200 rounded-xl p-4 flex justify-between items-center hover:border-rose-300 transition">
+                            <input type="checkbox" class="hidden" value="850" data-name="Social Media (Growth)" onchange="calcularTotal()">
+                            <div class="border border-gray-200 rounded-lg p-3 flex justify-between items-center hover:border-green-400 transition">
                                 <div class="flex items-center gap-3">
-                                    <i class="fa-solid fa-camera text-xl"></i>
-                                    <div>
-                                        <div class="font-bold text-sm">Social Media (Pro)</div>
-                                        <div class="text-xs opacity-70">5 posts/semana + Reels + Gestão</div>
-                                    </div>
+                                    <i class="fa-solid fa-rocket text-lg text-gray-400 check-icon transition"></i>
+                                    <span class="font-semibold text-sm">Social Media (Growth)</span>
                                 </div>
-                                <div class="font-bold">R$ 1.500</div>
+                                <div class="font-bold text-sm text-slate-600">R$ 850</div>
                             </div>
                         </label>
 
-                        <!-- Item 3 -->
                         <label class="checkbox-wrapper cursor-pointer block">
-                            <input type="checkbox" class="hidden" value="1000" data-name="Gestão de Tráfego" onchange="calcularTotal()">
-                            <div class="border-2 border-gray-200 rounded-xl p-4 flex justify-between items-center hover:border-rose-300 transition">
+                            <input type="checkbox" class="hidden" value="600" data-name="Gestão de Tráfego" onchange="calcularTotal()">
+                            <div class="border border-gray-200 rounded-lg p-3 flex justify-between items-center hover:border-green-400 transition">
                                 <div class="flex items-center gap-3">
-                                    <i class="fa-solid fa-bullhorn text-xl"></i>
-                                    <div>
-                                        <div class="font-bold text-sm">Gestão de Tráfego</div>
-                                        <div class="text-xs opacity-70">Google Ads e Meta Ads</div>
-                                    </div>
+                                    <i class="fa-solid fa-bullhorn text-lg text-gray-400 check-icon transition"></i>
+                                    <span class="font-semibold text-sm">Gestão de Tráfego</span>
                                 </div>
-                                <div class="font-bold">R$ 1.000</div>
+                                <div class="font-bold text-sm text-slate-600">R$ 600</div>
                             </div>
                         </label>
 
-                        <!-- Item 4 -->
                         <label class="checkbox-wrapper cursor-pointer block">
-                            <input type="checkbox" class="hidden" value="2500" data-name="Identidade Visual" onchange="calcularTotal()">
-                            <div class="border-2 border-gray-200 rounded-xl p-4 flex justify-between items-center hover:border-rose-300 transition">
+                            <input type="checkbox" class="hidden" value="250" data-name="Pack 5 Artes" onchange="calcularTotal()">
+                            <div class="border border-gray-200 rounded-lg p-3 flex justify-between items-center hover:border-green-400 transition">
                                 <div class="flex items-center gap-3">
-                                    <i class="fa-solid fa-palette text-xl"></i>
-                                    <div>
-                                        <div class="font-bold text-sm">Identidade Visual</div>
-                                        <div class="text-xs opacity-70">Logo + Manual + Papelaria (Taxa Única)</div>
-                                    </div>
+                                    <i class="fa-solid fa-image text-lg text-gray-400 check-icon transition"></i>
+                                    <span class="font-semibold text-sm">Pack 5 Artes Avulsas</span>
                                 </div>
-                                <div class="font-bold">R$ 2.500</div>
+                                <div class="font-bold text-sm text-slate-600">R$ 250</div>
+                            </div>
+                        </label>
+
+                        <label class="checkbox-wrapper cursor-pointer block">
+                            <input type="checkbox" class="hidden" value="350" data-name="Google Meu Negócio" onchange="calcularTotal()">
+                            <div class="border border-gray-200 rounded-lg p-3 flex justify-between items-center hover:border-green-400 transition">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-map-pin text-lg text-gray-400 check-icon transition"></i>
+                                    <span class="font-semibold text-sm">Google Meu Negócio</span>
+                                </div>
+                                <div class="font-bold text-sm text-slate-600">R$ 350</div>
+                            </div>
+                        </label>
+
+                        <label class="checkbox-wrapper cursor-pointer block">
+                            <input type="checkbox" class="hidden" value="500" data-name="Logo Express" onchange="calcularTotal()">
+                            <div class="border border-gray-200 rounded-lg p-3 flex justify-between items-center hover:border-green-400 transition">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-pen-nib text-lg text-gray-400 check-icon transition"></i>
+                                    <span class="font-semibold text-sm">Logo Express</span>
+                                </div>
+                                <div class="font-bold text-sm text-slate-600">R$ 500</div>
                             </div>
                         </label>
                     </div>
                 </div>
 
-                <!-- Lado Direito: Resumo -->
-                <div class="bg-azi-secondary p-8 md:p-12 text-white flex flex-col justify-between relative">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-rose-500 rounded-full filter blur-3xl opacity-20 -mr-10 -mt-10"></div>
+                <!-- Lado Direito: Total -->
+                <div class="bg-slate-900 p-8 md:p-10 text-white flex flex-col justify-between relative">
                     
                     <div>
-                        <h3 class="text-xl font-bold mb-6 border-b border-gray-600 pb-4">Resumo do Investimento</h3>
-                        <div id="lista-selecionados" class="space-y-3 text-sm text-gray-300 min-h-[100px]">
-                            <p class="italic opacity-50">Nenhum serviço selecionado.</p>
+                        <h3 class="text-lg font-bold mb-4 text-gray-400 uppercase tracking-wider text-xs">Itens Selecionados</h3>
+                        <div id="lista-selecionados" class="space-y-2 text-sm text-gray-300 min-h-[80px]">
+                            <p class="italic opacity-50 text-xs">Nenhum serviço selecionado.</p>
                         </div>
                     </div>
 
-                    <div class="mt-8">
+                    <div class="mt-8 border-t border-gray-700 pt-6">
                         <div class="flex justify-between items-end mb-2">
-                            <span class="text-gray-400 text-sm">Estimativa Total</span>
-                            <span class="text-4xl font-bold text-rose-400" id="total-valor">R$ 0,00</span>
+                            <span class="text-gray-400 text-sm">Investimento Total</span>
+                            <span class="text-4xl font-extrabold text-green-400" id="total-valor">R$ 0,00</span>
                         </div>
-                        <p class="text-xs text-gray-500 mb-6 text-right">*Valores sujeitos a análise detalhada.</p>
+                        <p class="text-[10px] text-gray-500 mb-6 text-right">*Pagamento facilitado no cartão ou PIX.</p>
                         
-                        <button onclick="enviarWhatsApp()" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg">
-                            <i class="fa-brands fa-whatsapp text-xl"></i> Enviar Proposta via WhatsApp
+                        <button onclick="enviarWhatsApp()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg hover:shadow-green-500/20 transform hover:-translate-y-1">
+                            Solicitar Contratação
                         </button>
                     </div>
                 </div>
@@ -222,14 +286,10 @@
 
     </main>
 
-    <footer class="bg-gray-900 text-white py-10 text-center">
+    <footer class="bg-white border-t border-gray-100 py-10 text-center">
         <div class="container mx-auto px-6">
-            <p class="text-gray-500 mb-4">&copy; 2025 Azi Comunicação. Todos os direitos reservados.</p>
-            <div class="flex justify-center gap-6 text-2xl text-gray-400">
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+            <img src="logo_azi.jpg" alt="Logo" class="h-8 mx-auto mb-4 opacity-50 grayscale hover:grayscale-0 transition">
+            <p class="text-gray-400 text-xs mb-4">&copy; 2025 Azi Comunicação. Estratégias Digitais.</p>
         </div>
     </footer>
 
@@ -241,16 +301,16 @@
             let htmlLista = '';
 
             if (checkboxes.length === 0) {
-                listaContainer.innerHTML = '<p class="italic opacity-50">Nenhum serviço selecionado.</p>';
+                listaContainer.innerHTML = '<p class="italic opacity-50 text-xs">Nenhum serviço selecionado.</p>';
             } else {
                 checkboxes.forEach(cb => {
                     const valor = parseFloat(cb.value);
                     const nome = cb.getAttribute('data-name');
                     total += valor;
                     htmlLista += `
-                        <div class="flex justify-between animate-fade-in">
+                        <div class="flex justify-between animate-pulse">
                             <span>${nome}</span>
-                            <span class="font-semibold">R$ ${valor.toLocaleString('pt-BR')}</span>
+                            <span class="font-semibold text-white">R$ ${valor.toLocaleString('pt-BR')}</span>
                         </div>
                     `;
                 });
@@ -263,23 +323,23 @@
         function enviarWhatsApp() {
             const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
             if (checkboxes.length === 0) {
-                alert("Por favor, selecione pelo menos um serviço.");
+                alert("Selecione pelo menos um serviço para gerar a proposta.");
                 return;
             }
 
-            let mensagem = "Olá! Gostaria de validar o orçamento para os seguintes serviços:%0A%0A";
+            let mensagem = "Olá Azi! Gostaria de contratar o seguinte pacote promocional:%0A%0A";
             let total = 0;
 
             checkboxes.forEach(cb => {
                 const valor = parseFloat(cb.value);
                 const nome = cb.getAttribute('data-name');
                 total += valor;
-                mensagem += `- ${nome} (R$ ${valor})%0A`;
+                mensagem += `✅ ${nome} (R$ ${valor})%0A`;
             });
 
-            mensagem += `%0A*Total Estimado: R$ ${total}*%0A%0AGostaria de agendar uma reunião?`;
+            mensagem += `%0A💰 *Total Investimento: R$ ${total}*%0A%0APodemos fechar?`;
 
-            // Substitua o número abaixo pelo número da Azi
+            // Substitua pelo número real
             const numeroWhatsApp = "5511999999999"; 
             window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagem}`, '_blank');
         }
